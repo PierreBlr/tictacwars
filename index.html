@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Morpion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head> 
+  <body>
+    <h1>Tic Tac Wars</h1>
+      <div class="wrapper">
+        <div class="box">
+          <div id="playerX">
+            <p>Joueur1</p>
+            <p class="symbole">Symbole : <i class="fas fa-times"></i></p>
+            <p class="rating">Score :<span id="scoreX">0</span></p>
+            <p class="msg"></p>
+          </div>
+        </div>
+        <div id="morpion">
+          <div id="c1" class="carre"><i></i></div>    <!-- on met des i pour intégrer le jeton -->
+          <div id="c2" class="carre"><i></i></div>
+          <div id="c3" class="carre"><i></i></div>
+          <div id="c4" class="carre"><i></i></div>
+          <div id="c5" class="carre"><i></i></div>
+          <div id="c6" class="carre"><i></i></div>
+          <div id="c7" class="carre"><i></i></div>
+          <div id="c8" class="carre"><i></i></div>
+          <div id="c9" class="carre"><i></i></div>
+        </div>
+        <div class="box">
+          <div id="playerO">
+            <p>Joueur2</p>
+            <p class="symbole">Symbole : <i class="fas fa-circle"></i></p>
+            <p class="rating">Score :<span id="scoreO">0</span></p>
+            <p class="msg"></p>
+          </div>
+        </div>
+      </div>
+      <p class="pVictoire"></p>
+        <div class="button">
+          <button id="retry" type="button">Manche Suivante</button>
+          <button id="restart" type="button">Reinitialiser le score</button>
+        </div>
+      <h2 id="egalite"></h2>
+    <script src="script.js"></script>    
+  <body>
+</html>
+
